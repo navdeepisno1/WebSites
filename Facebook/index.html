@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Facebook - log in or sign up</title>
+	<style>
+		
+		*
+		{
+			font-family: arial;
+		}
+		
+		.fb-login
+		{
+			width: 100%;
+			height: 85px;
+			background: #3b5998;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.fb-logo
+		{
+			position: absolute;
+			top: 0;
+			left: 18%;
+			height: 100%;
+			width: auto;
+			line-height: 85px;
+			font-size: 45px;
+			color: white;
+			font-weight: 600;
+		}
+		.fb-login-table
+		{
+			color: white;
+			padding-top: 5px;
+			position: absolute;
+			width: auto;
+			height: 100%;
+			right: 18%;
+			top: 0;
+		}
+		
+		.fb-login-table table tr td
+		{
+			font-size: 14px;
+		}
+		.fb-login-button
+		{
+			background-color:  #365899;
+			color: #fff;
+			border: thin solid #fff;
+			margin-left: 5px;
+			padding: 1px 7px;
+			border-radius: 2px;
+		}
+		.fb-signup
+		{
+			position: absolute;
+			top: 100px;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+		}
+		.fb-signup-network
+		{
+			position: absolute;
+			top: 100px;
+			left: 18%;
+		}
+		.fb-signup-table
+		{
+			position: absolute;
+			top: 20px;
+			right: 18%;
+		}
+		@media only screen and (max-width: 748px) 
+		{
+			.fb-logo
+			{
+				display: none;
+			}
+			.fb-signup-network
+			{
+				display: none;
+			}
+ 		
+		}
+		
+		.fb-signup-input
+		{
+			padding: 10px 12px;
+			font-weight: 700;
+			border-radius: 5px;
+			border: thin solid #BABBDD;
+		}
+		
+		.fb-signup-button
+		{
+			width: 200px;
+			padding: 10px 15px;
+			background: #6daa58;
+			color: white;
+			text-shadow: 0 1px 2px #6daa58;
+			font-size: 20px;
+			font-weight: 800;
+			border: thin solid #000;
+			border-radius: 5px;
+			box-shadow: inset 0 0 3px 1px #fff;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div class="fb-login">
+		<div class="fb-logo">
+			facebook
+		</div>
+		
+		<div class="fb-login-table">
+			<table style="border: none;">
+				<tr>
+					<td>
+						Email or Phone
+					</td>
+					<td>
+						Password
+					</td>
+					<td>
+					
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" class="fb-login-input">
+					</td>
+					<td>
+						<input type="password" class="fb-login-input">
+					</td>
+					<td>
+						<button class="fb-login-button">Log In</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+						Forgotten Password?
+					</td>
+					<td>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<div class="fb-signup">
+		<img src="network.png" class="fb-signup-network">
+		
+		<div class="fb-signup-table">
+			<form>
+			<table style="border: none; height: auto;width: 300px;" cellpadding="5px">
+				<tr>
+					<td colspan="2" style="font-size: 35px; font-weight: 600; opacity: .7">
+						Create an account
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="opacity: .7;font-weight: 600;">
+					It's quick and easy
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" placeholder="First Name" class="fb-signup-input">
+					</td>
+					<td>
+						<input type="text" placeholder="Surname" class="fb-signup-input">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="text" placeholder="Mobile or Email Address" class="fb-signup-input" style="width: 94%;">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="password" placeholder="New Password" class="fb-signup-input" style="width: 94%;">
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" style="color: #AAA;font-weight: 600;">
+						Birthday<br>
+						<input type="date" class="fb-signup-input">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div style="color: #AAA;font-weight: 600;">Gender</div><br>
+						<input type="radio" value="Male" name="gender" checked> Male
+						<input type="radio" value="Female" name="gender"> Female
+						<input type="radio" value="Custom" name="gender"> Custom
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="color: #333;font-size: 10px;">
+						By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Sign Up" class="fb-signup-button">
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2">
+						<a href="" style="text-decoration: none;">Create a Page</a> for a celebrity, band or business.
+					</td>
+				</tr>
+			</table>
+				</form>
+		</div>
+	</div>
+</body>
+</html>
